@@ -19,7 +19,7 @@ public class Loop {
    * </ul>
    * @return nota valida digitada
    */
-  public static int pedirNota() {
+  public static void pedirNota() {
     Scanner scanner = new Scanner(System.in);
 
     while (true) {
@@ -28,18 +28,19 @@ public class Loop {
       boolean notaValida = nota <= 10 && nota > 0;
       if(notaValida){
         System.out.println("Nota valida!");
-        return nota;
+        break;
       }else{
         System.out.println("Nota invalida! Digite uma nota valida");
       }
     }
+    scanner.close();
   }
 
 
   /**
    * Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
    */
-  public static boolean pedirLogin() {
+  public static void pedirLogin() {
     Scanner scanner = new Scanner(System.in);
 
     while (true) {
@@ -53,11 +54,12 @@ public class Loop {
     
       if(!loginInvalido){
         System.out.println("Login valido!");
-        return true;
+        break;
       }else{
         System.out.println("Login invalido!");
       }
     }
+    scanner.close();
   }
 
  

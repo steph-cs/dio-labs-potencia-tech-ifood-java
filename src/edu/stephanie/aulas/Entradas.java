@@ -12,6 +12,7 @@ public class Entradas {
     System.out.println("Digite uma mensagem: ");
     String mensagem = scanner.nextLine();
     System.out.println(mensagem);
+    scanner.close();
 
   }
 }
