@@ -1,4 +1,4 @@
-package edu.stephanie.estruturasRepeticao;
+package edu.stephanie.aulas.estruturasRepeticao;
 
 import java.util.Scanner;
 
