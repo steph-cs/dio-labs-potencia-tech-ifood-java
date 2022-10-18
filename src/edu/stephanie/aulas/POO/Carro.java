@@ -1,6 +1,6 @@
 package edu.stephanie.aulas.POO;
 
-public class Carro {
+public class Carro extends Veiculo {
   private int ano;
   private double capacidadeTanque;
   private String cor, marca;

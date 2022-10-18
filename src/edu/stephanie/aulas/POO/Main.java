@@ -8,15 +8,17 @@ public class Main {
     //atributos private; erro
     //System.out.println(carro.marca);
     //usando get
-    String marca = carro.getMarca();
-    System.out.println("Marca: "+marca);
+    System.out.println("Marca: "+ carro.getMarca());
 
-    marca = "Fiat";
-    carro.setMarca(marca);
-    System.out.println("Marca: "+marca);
+    carro.setMarca("Fiat");
+    System.out.println("Marca: "+ carro.getMarca());
 
     carro.setCapacidadeTanque(20);
     double valorTanqueTotal = carro.valorTanqueTotal(6.25);
     System.out.println(valorTanqueTotal);
+
+    //carro herda metodos de veiculo
+    carro.setPlaca("FLN2450");
+    System.out.println("Placa: "+ carro.getPlaca());
   }
 }
